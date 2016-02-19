@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Demo-Mysql": {
+    "host": "demo.strongloop.com",
+    "port": 3306,
+    "database": "demo",
+    "password": "L00pBack",
+    "name": "Demo-Mysql",
+    "user": "demo",
+    "connector": "mysql"
+  }
+}
