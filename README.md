@@ -22,8 +22,8 @@ Last updated: 2/1/2016
 3. A directory for creating projects. Recommended that you create a directory to store projects.
 
 ----
-## Download a Run
-If you want to just run this application, you can clone it and perform an npm install. 
+## Download and Run Option
+If you want to just run this application, you can clone it and perform an npm install. Otherwise scroll down to the Script section to manually create.
 * To do that, open a terminal and type:
 ```
 git clone https://github/com/ibm-strongloop-tech-sales-enablement/mysqldemo-lab-enablement-sl
