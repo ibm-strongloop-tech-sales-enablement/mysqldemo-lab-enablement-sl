@@ -1,6 +1,7 @@
 # Quick Demo Tutorial
 This tutorial will teach you how to quick demonstrate StrongLoop focusing on Arc.
 By the end of this tutorial you should be able to:
+
 1. Create a StrongLoop Product
 2. Use Composer to discover models from a MySQL database
 3. Preview APIs using Explorer
