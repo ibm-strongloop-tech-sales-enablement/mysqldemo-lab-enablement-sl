@@ -21,6 +21,33 @@ Last updated: 2/1/2016
 3. A directory for creating projects. Recommended that you create a directory to store projects.
 
 ----
+## Download a Run
+If you want to just run this application, you can clone it and perform an npm install. 
+* To do that, open a terminal and type:
+```
+git clone https://github/com/ibm-strongloop-tech-sales-enablement/mysqldemo-lab-enablement-sl
+```
+
+* Change directories to mysqldemo-lab-enalbement-sl
+```
+cd mysqldemo-lab-enablement-sl
+```
+
+* Install the required modules from npm
+```
+npm install
+```
+
+* Start the server
+```
+node .
+```
+
+* Open a browser and navigate to http://0.0.0.0:3000/explorer
+----
+
+
+# Script
 
 ## Create a StrongLoop Project
 Create a project using the slc loopback command. This will create the initial project and install the necessary libraries from npm.
