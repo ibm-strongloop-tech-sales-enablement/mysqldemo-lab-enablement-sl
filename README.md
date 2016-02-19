@@ -19,7 +19,8 @@ Last updated: 2/1/2016
 1. nodejs installed. For more information on installing node, please visit [www.nodejs.org]
 2. StrongLoop installed. For more information on installing StrongLoop, please visit [www.strongloop.com]
 3. A directory for creating projects. Recommended that you create a directory to store projects.
----- 
+----
+
 ## Create a StrongLoop Project
 Create a project using the slc loopback command. This will create the initial project and install the necessary libraries from npm.
 **Steps**
