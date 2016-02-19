@@ -27,19 +27,20 @@ Create a project using the slc loopback command. This will create the initial pr
 **Steps**
 + Open a terminal and navigate to your projects directory.
 ![Project Directory](images/2016-01-31_15-03-38.png)
-##
+
+
 + Create a new StrongLoop project called MysqlDemo by entering slc loopback MysqlDemo at the command prompt. Note that if you forget to add the MysqlDemo at the command line you can always add it via the wizard.
 ```
 slc loopback MysqlDemo
 ```
 
 ![Create Project](images/2016-01-31_15-25-17.png)
-##
+
 + Accept the defaults by pressing enter or return. 
 	+ What’s the name of your application? MysqlDemo
 	+ Enter the name of the directory to contain the project: MysqlDemo
 ![Accept Defaults](images/2016-01-31_15-25-17.png)
-##
+
 + This will create the project structure and install the base libraries needed run the application.
 + Change directories to the newly created directory - MysqlDemo and view the contents of the directory.
 ![Project Stucture](images/2016-01-31_16-48-43.png)
@@ -84,10 +85,10 @@ slc arc
 ![Connection Parameters](images/2016-01-31_19-42-14.png)
 + Save the Datasource by pressing the **Save Datasource** Button.
 ![Save Datasource](images/2016-01-31_19-42-14-2.png)
-##
+
 + Next, test the datasource to make sure you can successfully connect to it by pressing the **Test Connection** button
 ![Test Connection](images/2016-01-31_19-42-14-3.png)
-##
+
 + If successful, you will see a **Success** message next the **Test Connection** button.
 ![Connection Test Success](images/2016-01-31_19-47-29.png)
 ---- 
@@ -99,13 +100,13 @@ StrongLoop Composer has the ability discover models from relational databases wi
 + Click the down arrow button. This will show a menu for the connection.
 + Select **discover models**. This will interrogate the database and open a dialog to listing the available tables to model.
 ![Discover Models](images/2016-01-31_20-07-38.png)
-## 
+
 + Select the Customer, Order, and Review table and press the **Next**button.
 ![Select Tables to Model](images/2016-01-31_20-10-00.png)
-## 
+
 + Next the dialog will display the attributes of each selected table. You can choose to un-select attributes if you like. Press the **Next**button.
 ![Model Attribures](images/2016-01-31_20-11-35.png)
-## 
+
 + This will create the models based on the tables and attributes selected.
 ![Orders Model](images/2016-01-31_20-14-43.png)
 ---- 
@@ -115,26 +116,26 @@ StrongLoop provides a [Swagger] interface to the APIs that have been created.
 
 + From StrongLoop Arc. To run from Arc, press the **App Controller** button in the upper right hand side of Arc (looks like a play button). This will open the App Controller. The application should be stopped at this time. Press the **Play** button.
 ![App Controller - Stopped](images/2016-02-01_15-12-01.png)
-##
+
 + You should see the following to let you know that the API Explorer is available.
 ![App Controller](images/2016-02-01_15-15-31.png)
-##
+
 + You can also look at your terminal and it should look similar to the following:
 ![Termanal](images/2016-02-01_15-15-51.png)
-##
+
 + Once your loopback server application is running, you can press the the link localhost:3000 to view the status of the server.
 ![Follow Link](images/2016-02-01_21-27-57.png)
-##
+
 + The server status should stated that it has been started with a timestamp and for how long the server has been running.
 ![Server Status](images/2016-02-01_21-38-21.png)
-##
+
 + To view the explorer, launch your favorite browser and navigate to [http://0.0.0.0:3000/explorer].
 ![View in Explorer](images/2016-02-01_21-43-02.png)
-##
+
 + (Option) An alternative to using StrongLoop Arc is to use the command line to start the server process without the Process Manager by opening a terminal and typing:
 '' node .
 ![](images/2016-02-01_21-45-17.png)
-##
+
 + This will start a StrongLoop process for your application. This is great for verifying the APIs.
 ++This does not start the Process Manager, it simply starts a process++
 + To view the explorer, launch your favorite browser and navigate to [http://0.0.0.0:3000/explorer].
@@ -201,7 +202,7 @@ When discovering the models, StrongLoop automatically created two files for each
 The first file is a JavaScript file. This is where you would program any remote methods or hooks as well as any business logic that might be needed for the model. This lab will not cover hooks or remote methods, later labs will.
 ![](iamges/2016-02-01_21-58-36.png)
 
-##
+
 The second file is a JSON file that describes the components of the model as well as any mappings. The JSON file also maintains information about model relationships, security, any validations, as well as any methods created. Those topics will be covered in subsequent labs.
 ![](images/2016-02-01_21-58-50.png)
 ---- 
@@ -234,7 +235,7 @@ To remove the user model from the list of available APIs, open the model-config.
 To limit the available methods for a particular model, use the disableRemoteMethod method. Your existing Customer model in Explorer should look like:
 ![Existing Customer Model](images/2016-02-02_17-28-04.png)
 
-##
+
 **Steps**
 + Open the common/models/customer.js file. It should look similar to the following:
 ```javascript
@@ -276,7 +277,7 @@ module.exports = function(Customer) {
 
 + This will disable the exists (HEAD), createChangeStream, and updateAll methods for the customer model.
 + Restart your server and look at the results.
-##
+
 Your new Customer model in Explorer should look like:
 ![New Customer API](images/2016-02-02_17-30-20.png)
 
